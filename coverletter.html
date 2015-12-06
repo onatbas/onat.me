@@ -1,6 +1,11 @@
-<p>Cover Letter - Onat Bas</p>
-<script type="text/javascript">// <![CDATA[
-function setText(from, to)
+<html>
+<body>
+    <head>
+    <title>Cover Letter - Onat Bas</title>
+      
+    <script type="text/javascript">
+
+    function setText(from, to)
     {
         var text = document.getElementById(from).value;
     document.getElementById(to).innerHTML = text;
@@ -41,34 +46,104 @@ function setText(from, to)
     {
         document.getElementById("gui").style.display = "none";
     }
-// ]]></script>
-<div id="gui">
-<div>Name: Onat Bas</div>
-<div>Your address: Your Address here</div>
-<div>Email: xxx@xxx.xxxx</div>
-<div>Phone: +094054059223</div>
-<div>Date: Apr 10th, 2015</div>
-<div>Company: Triska Software</div>
-<div>Company Address: Address address bla bla</div>
-<div>Company city: Istanbul, Turkey</div>
-<div>Contact: Dear ONAT BAS</div>
-<div>Intro: Intro text</div>
-<div>Paragraph 1: paragraph1.</div>
-<div>Paragraph 2: paragraph 2</div>
-<div>Ending paragraph: ending paragraph</div>
-<div>Regards: Best regards</div>
-Submitremove for printing</div>
-<div id="page">
-<h1 class="right" id="name">Your name</h1>
-<p class="right"><span id="address">YOUR ADDRESS HERE</span><br /> E: <span id="email">XXXX@XXX.XXX</span><br /> M: <span id="phone">+09044034234</span></p>
-<h1 id="date">May 15th, 2015</h1>
-<h1 id="company">COMPANY</h1>
-<p><span id="company_address">ADDRESS</span><br /><span id="company_city">CITY, COUNTRY</span></p>
-<h1 class="indent"><span id="contact">Dear CONTACT PERSON</span>,</h1>
-<p class="indent" id="intro">YOUR INTRO HERE.</p>
-<p class="indent" id="message1">YOUR MESSAGE HERE.</p>
-<p class="indent" id="message2">YOUR MESSAGE HERE</p>
-<p class="indent" id="ending">ENDING PARAGRAPH HERE</p>
-<p class="indent distant" id="regards">Best Regards,</p>
-<p class="indent distant" id="name2">Onat Bas</p>
-</div>
+    </script>
+
+    <style type="text/css">
+    
+    #gui{
+        margin: 30px;
+        padding: 10px;
+        border: 1px solid #444;
+        border-radius: 3px;
+        font-size: 12px;
+    }
+        body {
+            font-family: Arial;
+            font-size: 0.9em;
+            color: #626056;
+            line-height: 1.4em;
+        }
+
+        p{
+            margin-top: 0px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .indent{
+            text-indent: 50px;
+        }
+
+        .distant{
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        h1 {
+            font-size: 1em;
+            padding-top: 40px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        #page {
+            display: block;
+            margin: 40px auto auto auto;
+            width: 700px;
+            border: 1 solid #efefef;
+            border-radius: 15px;
+        }
+        
+    </style>
+    </head>
+    <body>
+  
+    <div id="gui">
+    <div>Name: <textarea id="name_">Onat Bas</textarea></div>    
+    <div>Your address: <textarea id="address_">Your Address here</textarea></div>  
+    <div>Email: <textarea id="email_">xxx@xxx.xxxx</textarea></div>  
+    <div>Phone: <textarea id="phone_">+094054059223</textarea></div>  
+    <div>Date: <textarea id="date_">Apr 10th, 2015</textarea></div>  
+    <div>Company: <textarea id="company_">Triska Software</textarea></div>  
+    <div>Company Address: <textarea id="company_address_">Address address bla bla</textarea></div>  
+    <div>Company city: <textarea id="company_city_">Istanbul, Turkey</textarea></div>  
+    <div>Contact: <textarea id="contact_">Dear ONAT BAS</textarea></div>
+    <div>Intro: <textarea id="intro_">Intro text</textarea></div>
+    <div>Paragraph 1: <textarea id="message1_">paragraph1.</textarea></div>
+    <div>Paragraph 2: <textarea id="message2_">paragraph 2</textarea></div>
+    <div>Ending paragraph: <textarea id="ending_">ending paragraph</textarea></div>  
+    <div>Regards: <textarea id="regards_">Best regards</textarea></div>  
+        
+<button onclick="submit()">Submit</button>
+<button onclick="hide()">remove for printing</button>
+    </div>
+    
+    <div id="page">
+        <h1 class="right" id="name">Your name</h1>
+        <p class="right">
+        <span id="address">YOUR ADDRESS HERE</span><br/>
+        E: <span id="email">XXXX@XXX.XXX</span><br/>
+        M: <span id="phone">+09044034234</span></p>
+
+        <h1 id="date">May 15th, 2015</h1>
+
+        <h1 id="company">COMPANY</h1>
+        <p class=""><span id="company_address">ADDRESS</span><br/><span id="company_city">CITY, COUNTRY</span></p>
+
+        <h1 class="indent"><span id="contact">Dear CONTACT PERSON</span>,</h1>
+        <p class="indent" id="intro">YOUR INTRO HERE.</p>
+        <p class="indent" id="message1">YOUR MESSAGE HERE. </p>
+        <p class="indent" id="message2">YOUR MESSAGE HERE</p>
+        <p class="indent" id="ending">ENDING PARAGRAPH HERE</p>
+
+        <p class="indent distant" id="regards">Best Regards,</p>
+        <p class="indent distant" id="name2">Onat Bas</p>
+
+    </div>
+    </body>
+</body>
+</html>
