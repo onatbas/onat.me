@@ -1,0 +1,74 @@
+<p>Cover Letter - Onat Bas</p>
+<script type="text/javascript">// <![CDATA[
+function setText(from, to)
+    {
+        var text = document.getElementById(from).value;
+    document.getElementById(to).innerHTML = text;
+
+    }
+    
+    function hideif(hidethis, checkbox, defaultdisplay)
+    {
+        var ischecked = document.getElementById(checkbox).checked;
+        
+        if(ischecked == false)
+            document.getElementById(hidethis).style.display = "none";
+        else
+            document.getElementById(hidethis).style.display = defaultdisplay;
+    }
+
+    function submit()
+    {
+      setText("name_", "name");
+      setText("name_", "name2");
+      setText("address_", "address");
+      setText("email_", "email");
+      setText("phone_", "phone");
+      setText("date_", "date");
+      setText("company_", "company");
+      setText("company_address_", "company_address");
+      setText("company_city_", "company_city");
+      setText("contact_", "contact");
+      
+      setText("intro_", "intro");
+      setText("message1_", "message1");
+      setText("message2_", "message2");
+      setText("ending_", "ending");
+      setText("regards_", "regards");
+    }
+
+    function hide()
+    {
+        document.getElementById("gui").style.display = "none";
+    }
+// ]]></script>
+<div id="gui">
+<div>Name: Onat Bas</div>
+<div>Your address: Your Address here</div>
+<div>Email: xxx@xxx.xxxx</div>
+<div>Phone: +094054059223</div>
+<div>Date: Apr 10th, 2015</div>
+<div>Company: Triska Software</div>
+<div>Company Address: Address address bla bla</div>
+<div>Company city: Istanbul, Turkey</div>
+<div>Contact: Dear ONAT BAS</div>
+<div>Intro: Intro text</div>
+<div>Paragraph 1: paragraph1.</div>
+<div>Paragraph 2: paragraph 2</div>
+<div>Ending paragraph: ending paragraph</div>
+<div>Regards: Best regards</div>
+Submitremove for printing</div>
+<div id="page">
+<h1 class="right" id="name">Your name</h1>
+<p class="right"><span id="address">YOUR ADDRESS HERE</span><br /> E: <span id="email">XXXX@XXX.XXX</span><br /> M: <span id="phone">+09044034234</span></p>
+<h1 id="date">May 15th, 2015</h1>
+<h1 id="company">COMPANY</h1>
+<p><span id="company_address">ADDRESS</span><br /><span id="company_city">CITY, COUNTRY</span></p>
+<h1 class="indent"><span id="contact">Dear CONTACT PERSON</span>,</h1>
+<p class="indent" id="intro">YOUR INTRO HERE.</p>
+<p class="indent" id="message1">YOUR MESSAGE HERE.</p>
+<p class="indent" id="message2">YOUR MESSAGE HERE</p>
+<p class="indent" id="ending">ENDING PARAGRAPH HERE</p>
+<p class="indent distant" id="regards">Best Regards,</p>
+<p class="indent distant" id="name2">Onat Bas</p>
+</div>
