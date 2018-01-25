@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/onatbas
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://onat.me
+  * I am onatbas (https://keybase.io/onatbas) on keybase.
+  * I have a public key with fingerprint 9D97 8C21 E8B4 09DB 39EB  5460 40E2 3B34 FD5A 7E13
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01010bd7dc599d6be6d266b00389e9284c1bb0c0c60b5adf696ab313c114a655df3b0a",
+      "fingerprint": "9d978c21e8b409db39eb546040e23b34fd5a7e13",
+      "host": "keybase.io",
+      "key_id": "40e23b34fd5a7e13",
+      "kid": "01010bd7dc599d6be6d266b00389e9284c1bb0c0c60b5adf696ab313c114a655df3b0a",
+      "uid": "cb90047e60a63221a16e62a47da00d19",
+      "username": "onatbas"
+    },
+    "service": {
+      "hostname": "onat.me",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1516889833,
+  "expire_in": 157680000,
+  "prev": "a1c24dced6a548b708efa709c84292d8318b570cba3cf675d5c9d1dedb982aab",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUm1QVFUY3gVBF0NX16ipULxqRO7g/f5Y+kE6OshIATaTocN6zz1n8brr3mX3
+7sK6LJkVhKNoMaiJkuREoxHgYMSIY4XTjIhlo1SMkNiKEGoxI5AiwnQvUzP96Gfn
+/Djveed5nvd533kPxEcboozpkTR6Kq/UYuwaBoY8eSghhAEFBjFbCHOimQe5IPKp
+dqcMMRuGE9oFkIMSIwiQBYiFJMsCHKd4AQkkT0sEALiESywOGBE6WIEVAUVQEkHQ
+Issw0EEBXMSsmEN2FyCvxyu7VU1WgALHSySBeEDjAgSUgABDsziNI5ICFO2AjMgh
+gtKI2xSfztDMAdGHUmVFy2kf+4y9/8D/z779M3ISEHCc5hCLiyxFkoRIsIglRZqD
+Io5DQtCBPuR1izuQhlbcoqqZxcJWTEsGZAnpc9Ub+RcgVYusmMerqIqkuLTkNlX1
+2HSOGvTooCIE7H/T7UB2Q22AGiGAvD5ZcWM2QkNKqqzrEQzB8rzAU5QVQ8Ue2Yvs
+so5gOJbHtaOXQQFNUiQkkoYSgqzI0HwO4HAeOUQOFySeJgUS8hTBA4bDJSBSkoPl
+GMhIAiQggkDgSVEEmN5RoVvBbFopVSzQNH1ygdaN34uwcFxF1HOzDMYoQ2xMlL5a
+hjiT+Z992yCbDc22NdP9SkXLqbyFq5Oc+yO711kbmaLPxVWns5jA14XBpA/sqauM
+k2XZ8GOjI6vti96MM191tQ9ssZj8ocr2V0sjs5NaHlrAYPHFc6HO2nrDFrQ+eu7P
++K7G3h3Fg58kVvYdG3iQNjmrMKvfdXzBzndiiPBPmX/sHV+7OT98uH5xaMO3m45c
+S+i/u3JO+YCHCMU8OKTmvm+myi/Gj0y8aGq7M122T22Ku2+5sN3zfXKmvWlv27mq
+6JSQcc8Z29zW5PD8l873q09NjEy2zltLVEVuLK31N5Vv/GZ4ek9OaWe+6Yfm9CMZ
+7SUbn2/cPFRdZ2h94l77oQauvpJIoN46sGLZ1opF3md8ubGZ35X6l5XF1nRZG14Z
+xqcePR578hSVYsEN1+uCt0cXGfoizsBBZ2tJivtoyfmawtqTTTZDe8zZRz2JyekH
+i0fejR/sPrq9e6Li8BVX+ZLq0zekL/+MV36Msl1ZHTzxmtyzZmBTy9St14e2NvcN
+WVzZt1dk+JVfu5IcH2a4bHGLy+aJz5oaqEvXd8b2/NJzF9t9Sx5b2dR94Q1n54KM
+YFF6R7j6hDl7zuV9uzJb3CfDQ0+P3xwha/ibJUTc6J0q83Hp4dXxxKK+0d/ePOa/
+t9wUMC9ZXrcwUnBt3ZLP0q5Wd5S9PL/38f3Z763PeTs8dqliZGnLpy/kmgr6Lqu/
+n835KL/jLw==
+=uTri
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/onatbas
+
+==================================================================
