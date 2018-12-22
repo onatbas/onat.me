@@ -28,40 +28,35 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1516889833,
+  "ctime": 1545487830,
   "expire_in": 157680000,
-  "prev": "a1c24dced6a548b708efa709c84292d8318b570cba3cf675d5c9d1dedb982aab",
-  "seqno": 3,
+  "prev": "9d88cc2a49fee8cf616e481418ca69dabc3ebb222136d834223baad09b742a9e",
+  "seqno": 27,
   "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
 
-owGtUm1QVFUY3gVBF0NX16ipULxqRO7g/f5Y+kE6OshIATaTocN6zz1n8brr3mX3
-7sK6LJkVhKNoMaiJkuREoxHgYMSIY4XTjIhlo1SMkNiKEGoxI5AiwnQvUzP96Gfn
-/Djveed5nvd533kPxEcboozpkTR6Kq/UYuwaBoY8eSghhAEFBjFbCHOimQe5IPKp
-dqcMMRuGE9oFkIMSIwiQBYiFJMsCHKd4AQkkT0sEALiESywOGBE6WIEVAUVQEkHQ
-Issw0EEBXMSsmEN2FyCvxyu7VU1WgALHSySBeEDjAgSUgABDsziNI5ICFO2AjMgh
-gtKI2xSfztDMAdGHUmVFy2kf+4y9/8D/z779M3ISEHCc5hCLiyxFkoRIsIglRZqD
-Io5DQtCBPuR1izuQhlbcoqqZxcJWTEsGZAnpc9Ub+RcgVYusmMerqIqkuLTkNlX1
-2HSOGvTooCIE7H/T7UB2Q22AGiGAvD5ZcWM2QkNKqqzrEQzB8rzAU5QVQ8Ue2Yvs
-so5gOJbHtaOXQQFNUiQkkoYSgqzI0HwO4HAeOUQOFySeJgUS8hTBA4bDJSBSkoPl
-GMhIAiQggkDgSVEEmN5RoVvBbFopVSzQNH1ygdaN34uwcFxF1HOzDMYoQ2xMlL5a
-hjiT+Z992yCbDc22NdP9SkXLqbyFq5Oc+yO711kbmaLPxVWns5jA14XBpA/sqauM
-k2XZ8GOjI6vti96MM191tQ9ssZj8ocr2V0sjs5NaHlrAYPHFc6HO2nrDFrQ+eu7P
-+K7G3h3Fg58kVvYdG3iQNjmrMKvfdXzBzndiiPBPmX/sHV+7OT98uH5xaMO3m45c
-S+i/u3JO+YCHCMU8OKTmvm+myi/Gj0y8aGq7M122T22Ku2+5sN3zfXKmvWlv27mq
-6JSQcc8Z29zW5PD8l873q09NjEy2zltLVEVuLK31N5Vv/GZ4ek9OaWe+6Yfm9CMZ
-7SUbn2/cPFRdZ2h94l77oQauvpJIoN46sGLZ1opF3md8ubGZ35X6l5XF1nRZG14Z
-xqcePR578hSVYsEN1+uCt0cXGfoizsBBZ2tJivtoyfmawtqTTTZDe8zZRz2JyekH
-i0fejR/sPrq9e6Li8BVX+ZLq0zekL/+MV36Msl1ZHTzxmtyzZmBTy9St14e2NvcN
-WVzZt1dk+JVfu5IcH2a4bHGLy+aJz5oaqEvXd8b2/NJzF9t9Sx5b2dR94Q1n54KM
-YFF6R7j6hDl7zuV9uzJb3CfDQ0+P3xwha/ibJUTc6J0q83Hp4dXxxKK+0d/ePOa/
-t9wUMC9ZXrcwUnBt3ZLP0q5Wd5S9PL/38f3Z763PeTs8dqliZGnLpy/kmgr6Lqu/
-n835KL/jLw==
-=uTri
+owGtUltIFUEYPie1TkZlpHQhzDbs5sFmd2dnd4+BCVkU5UPQhVIOMztzjot29njO
+akmJkD0UmfiUgoFYRBcUA+0iWphUWkLRg0ZPXtIgullZmpQ2KwU99NjMw8z8fN83
+3/fzVy+McXncieeCY9car95x974hrtzk7KHjArFoqeA7LhSw2YMVUha1/QUmFXwC
+EPkmVKWGousUEYaohBABQNZ0pksaNERCgAEMBIiCaQDpCBNZlA1RhBgpCg3IBGDB
+KwTMUJBFwhEzZHNZneqqZkgi0wgEOiWyzogCEYCASTKRYYAqWGWizIn5VtRhcHME
+R1m6afEaf/hn7f0D/599F8/KGUQHAKoMAYxkSRKxiBiSMFQpBoCKugOMskgIH2Ec
+bYWwzc0KZV6BF0tMgzl9dYL8BUjnN68Qjli2ZViFvJhv22Gfw7FLww7oKCP+33Q/
+MUOUN5ATSlgkalohwSdypGGbjp6oQAVqqiYDr8COhc0I85sOQlGRBvhyvmEls23X
+NMPgvvUAY9peI4B4DqiJUNQMjHSKiSEzQiSeUEZUk6HEu4sxBTpRoYR1x3GUFYUs
+wSep3CgOctGoGeRxiiNMKIs/414V63J7XHPj5jiz5Yqfn/Bn4Iouzfu5Mret+vBE
+Q33n/ebw9cVkqPrCqabxz1uXtZ1Nsxqr1dyKyrPnXxiLDtW0J61vyXp2sGnfQBLs
+W9DQNzqa2t+5PS22K6E9Y7i2K2t9+zd4Yvj56qTsjfBkU8PukfG296cvr6nq6knx
+9CdnVhbMbLr++kPHq7rBH8P7PeNxUy/HbOlRf07eus05V1KSpiu2zHgm9A31qvdW
+d8aBlBNR+WnZ7uJET3fV98bFKwbHl+b5bg61vBub6GhVaupyb8+8ePJpybaRXQeG
+yr9WLLmRNwDXPYiZjOv4OAVSc9xnHmbiHvK4tfLtysni5Xenu4MV9xpba79kNC8q
+T9xbvnPtnpEdvT0Xh+t/AQ==
+=I8IN
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -70,3 +65,4 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/onatbas
 
 ==================================================================
+
