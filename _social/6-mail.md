@@ -1,6 +1,7 @@
 ---
 order: 6
-message_1: Click <a href="http://www.google.com/recaptcha/mailhide/d?k=01pvUofXy2nNTuZXmO2RLbaQ==&amp;c=RwhcT4z2PXogR8r_FyrF2tTUFH3WHwkJDSQOjM7vw7g=">email</a> for my address, sorry for captcha.
-link:
+message_1: My email is
+link: 
 message_2:
 ---
+<script language="JavaScript" type="text/javascript">function decode(a) {a = atob(a);   return a.replace(/[a-zA-Z]/g, function(c){      return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);  })  }; document.write("<a href=" + decode("em52eWdiOnR2Z0BiYW5nLnpy") + ">" + decode("dHZnQGJhbmcuenI=") + "</a>" + "<br>");</script>
