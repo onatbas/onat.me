@@ -1,3 +1,10 @@
+---
+order: 1
+message_1: Schedule 
+link: lunch</a> <img src="/resources/Logomakr_3_Skp8_U.png"></img>
+message_2: in your <img src="/resources/slack.png"></img> teams.
+---
+
 <html>
 
 <head>
@@ -5,7 +12,7 @@
 
     <style>
         html {
-            background: url('https://media.giphy.com/media/26uf2YTgF5upXUTm0/giphy.gif') no-repeat center fixed;
+            background: url('/resources/giphy.gif') no-repeat center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -54,7 +61,7 @@
 
     <div id="container">
 
-        <img src="https://image.ibb.co/n67kRQ/Logomakr_3_Skp8_U.png" width="200px" height="auto"><br>
+        <img src="/resources/Logomakr_3_Skp8_U.png" width="200px" height="auto"><br>
         <h1>Lunch Roulette</h1>
 
         <div id="howitworks" style="margin-top:20px">

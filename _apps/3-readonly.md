@@ -1,3 +1,10 @@
+---
+order: 3
+message_1: Use read-only
+link: tagger
+message_2: for <div id="evernote"></div>, it's hosted on <div id="predix"></div>.
+---
+
 <html>
 
 <head>
@@ -5,7 +12,7 @@
 
     <style>
         html {
-            background: url('onat.me/LY5TUv5.jpg') no-repeat center fixed;
+            background: url('/resources/LY5TUv5.jpg') no-repeat center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -54,7 +61,7 @@
 
     <div id="container">
 
-        <img src="onat.me/Logomakr_2Xu2q4.png" width="200px" height="auto"><br>
+        <img src="/resources/Logomakr_2Xu2q4.png" width="200px" height="auto"><br>
         <h1>Evernote ReadOnlyMaker</h1>
 
         <div id="howitworks" style="margin-top:20px">

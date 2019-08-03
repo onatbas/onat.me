@@ -1,3 +1,10 @@
+---
+order: 2
+message_1: Be more 
+link: agile
+message_2: with <img src="/resources/agilenote.png"></img>.
+---
+
 <html>
 
 <head>
@@ -5,7 +12,7 @@
 
     <style>
         html {
-            background: url('http://theagilepirate.net/wp-content/uploads/Board-Sept-2012.jpg') no-repeat center fixed;
+            background: url('/resources/Board-Sept-2012.jpg') no-repeat center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -60,7 +67,7 @@
 
     <div id="container">
 
-        <img src="agilenote.png" width="200px" height="auto"><br>
+        <img src="/resources/agilenote.png" width="200px" height="auto"><br>
         <h1>AgileNote</h1>
 
         <div id="howitworks" style="margin-top:20px">
@@ -76,11 +83,11 @@
 
             <p>You add your board structure as notebooks.</p>
 
-		<img src="stack.png"/>
+		<img src="/resources/stack.png"/>
 
 	<p> In your first notebook, create an empty note with tag "agilenote". In couple minutes you'll have your board ready!</p>
 
-		<img src="screenshot.png"/> 
+		<img src="/resources/screenshot.png"/> 
 
 
 	<p>Now it's all yours! Share, customize your method as you see fit. Each notebook serves as a column. Each note is a task that you can do whatever you want with. This gives you much more flexibility on what the task contains, compared to conventional management tools. Attach what you want, edit how you want. Share with you teams</p>

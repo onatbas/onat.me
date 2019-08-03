@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
 	<title>onat</title>
 	<script type="text/javascript" src="js/onat.js"></script>
     <link rel="stylesheet" href="css/onat.css">
-</head>
+</head><body><div id="content">
 
-<body>
-	<div id="content">
-			<h1>onatbas.</h1>
 
-            {% for post in site.posts %}
-                 {% if post.layout == "social" %}
-              		  <span>{{ post.message }} </span>
-         		 {% endif %}
-        {% endfor %}
+<!-- ASSIGNMENTS -->
 
-			<h1>apps.</h1>
-				
-            {% for post in site.posts %}
-                 {% if post.layout == "app" %}
-              		  <span>{{ post.message }} </span>
-         		 {% endif %}
-        {% endfor %}
+{% assign pages = site.pages | sort:"order" %}
+{% assign apps = site.apps | sort:"order" %}
+{% assign social = site.social | sort:"order" %}
+
+
+<!--  SOCIAL   -->
+
+<h1>onatbas.</h1>
+{% for post in social %}
+        <span>
+            {{ post.message_1 }}
+            {% if post.link %}<a href="{{ post.url }}">{{ post.link }}</a>{% endif %}
+            {{ post.message_2 }}
+        </span>
+{% endfor %}
+
+
+<!--  APPS   -->
+
+<h1>apps.</h1>
+{% for post in apps %}
+        <span>
+            {{ post.message_1 }}
+            {% if post.link %}<a href="{{ post.url }}">{{ post.link }}</a>{% endif %}
+            {{ post.message_2 }}
+        </span>
+{% endfor %}
 	
-			<h1>pages.</h1>
-				
-            {% for post in site.posts %}
-                 {% if post.layout == "page" %}
-              		  <span>{{ post.message }} </span>
-         		 {% endif %}
-        {% endfor %}
 
-<!--	
-            <h1>blog.</h1>
+<!--  PAGES   -->
 
-            {% for post in site.posts %}
-                 {% if post.layout == "blog" %}
-                <span>{{ post.message }} </span>
-          {% endif %}
-        {% endfor %}
+<h1>pages.</h1>
+{% for post in pages %}
+    <span>
+        {{ post.message_1 }}
+        {% if post.link %}<a href="{{ post.url }}">{{ post.link }}</a>{% endif %}
+        {{ post.message_2 }}
+    </span>
+{% endfor %}
 
--->
 
 		</div>
 	</div>
 </body>
-
-
 </html>
 
