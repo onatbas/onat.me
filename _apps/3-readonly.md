@@ -66,7 +66,7 @@ message_2: for <div id="evernote"></div>, it's hosted on <div id="predix"></div>
 
     <div id="container">
 
-        <img src="http://onat.me/Logomakr_2Xu2q4.png" width="200px" height="auto"><br>
+        <img src="/resources/Logomakr_2Xu2q4.png" width="200px" height="auto"><br>
         <h1>Evernote ReadOnlyMaker</h1>
 
         <div id="howitworks" style="margin-top:20px">
@@ -82,11 +82,11 @@ message_2: for <div id="evernote"></div>, it's hosted on <div id="predix"></div>
 
             <p>And then you tag your notes "lock".</p>
 
-            <img src="2.png.jpg">
+            <img src="/resources/2.png.jpg">
             
             <p>Sync your notes</p>
 
-            <img src="3.png.jpg">
+            <img src="/resources/3.png.jpg">
 
             <p>Done!</p>
 	
@@ -96,11 +96,11 @@ message_2: for <div id="evernote"></div>, it's hosted on <div id="predix"></div>
             
             <p>Add tag "unlock""</p>
 
-            <img src="4.png.jpg">
+            <img src="/resources/4.png.jpg">
 
             <p>And sync</p>
 
-            <img src="5.png.jpg">
+            <img src="/resources/5.png.jpg">
 
 		<h2>Supported on all platforms</h2>
 		<p>ReadOnlyTagger works with native evernote tags, so it's available on all platforms.</p>
