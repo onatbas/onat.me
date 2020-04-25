@@ -1,6 +1,6 @@
 ---
 order: 6
-message_1: My email is
+message_1: My email address is 
 link: 
 message_2:
 ---
