@@ -5,17 +5,10 @@
     <link rel="stylesheet" href="/resources/css/onat.css">
 </head><body><div id="content">
 
-
-<!-- ASSIGNMENTS -->
-
-{% assign pages = site.pages | sort:"order" %}
-{% assign apps = site.apps | sort:"order" %}
-{% assign social = site.social | sort:"order" %}
-
-
 <!--  SOCIAL   -->
 
 <h1>onat.</h1>
+{% assign social = site.social | sort:"order" %}
 {% for post in social %}
         <span>
             {{ post.message_1 }}
@@ -28,6 +21,7 @@
 
 <!--  APPS   -->
 <!--
+{% assign apps = site.apps | sort:"order" %}
 <h1>apps.</h1>
 {% for post in apps %}
         <span>
@@ -40,6 +34,7 @@
 
 <!--  PAGES   -->
 <!--
+{% assign pages = site.pages | sort:"order" %}
 <h1>pages.</h1>
 {% for post in pages %}
     <span>
