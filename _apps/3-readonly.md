@@ -2,7 +2,7 @@
 order: 3
 message_1: Use read-only
 link: tagger
-message_2: for <div id="evernote"></div>, it's hosted on <div id="predix"></div>.
+message_2: for <div id="evernote"></div>.
 ---
 
 <html>

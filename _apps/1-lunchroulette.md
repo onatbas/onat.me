@@ -1,8 +1,8 @@
 ---
 order: 1
-message_1: Schedule 
-link: lunch</a> <img src="/resources/Logomakr_3_Skp8_U.png"></img>
-message_2: in your <img src="/resources/slack.png"></img> teams.
+message_1: Add lunch 
+link: roulette
+message_2: on <img src="/resources/slack.png"></img> for <img src="/resources/Logomakr_3_Skp8_U.png"></img>.
 ---
 
 <html>
