@@ -1,27 +1,16 @@
 <!DOCTYPE html>
 <html><head>
         <title>{{page.message_1}} {{page.link}} {{page.message_2}}</title>
-	<script type="text/javascript" src="/resources/js/onat.js"></script>
-        <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5d4595f73387b20012d76518&product=" inline-share-buttons async="async"></script>
-    <link rel="stylesheet" href="/resources/css/onat.css">
         <style>
-                img{max-width:100%; min-width:50%; width: auto; margin: auto;}
-                .share{width: 100%; }
-				#content{ width: 70%; }
+				#content{ width: 100% !important;}
         </style>
                 
 </head><body><div id="content">
 
-<h3><a href="/blog/">blog</a> » {{page.message_1}} {{page.link}} {{page.message_2}}</h3>
+<h3><a href="/">main</a> » <a href="/blog/">blog</a> » {{page.message_1}} {{page.link}} {{page.message_2}}</h3>
 <hr>
 {{content}}
 <br />
-<br />
-  <i><a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a></i>
-<br />
-<br />
-<div class="share"><div class="sharethis-inline-share-buttons"></div></div>
-
-
+  <a href="{{ page.url }}">{{ page.date | date: "%B %d, %Y" }}</a>
 </div>
 </body> </html>

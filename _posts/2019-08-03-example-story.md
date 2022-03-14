@@ -4,6 +4,14 @@ message_1: This is a
 link: sample
 message_2: blog post.
 ---
+<!-- 
+-->
+ <link rel="stylesheet" href="/resources/css/onat.css"> 
+<style>
+	img{max-width:100%; min-width:50%; width: auto; margin: auto;}
+	#content{width: 70% !important;}
+</style>
+
 
 # An apple is a sweet, edible fruit produced by an apple tree.
 
