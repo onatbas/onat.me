@@ -1,5 +1,5 @@
 ---
-order: 30
+order: 21
 message_1: and <a href="http://twitter.com/maksatiyidir">Twitter</a>.
 message_2:
 link:
