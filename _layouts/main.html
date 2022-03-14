@@ -16,8 +16,8 @@
         <span>
             {{ post.message_1 }}
             {% if post.link %}<a href="{{ post.url }}">{{ post.link }}</a>{% endif %}
+            {{ post.content }}
             {{ post.message_2 }}
-            {{ post.content }} <!-- content is here only, on purpose -->
         </span>
 {% endfor %}
 
