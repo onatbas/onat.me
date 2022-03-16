@@ -19,7 +19,7 @@ message_2: for online postings.
 
 	td {
 		padding: 10px;
-		max-width: 600px;
+		max-width: 380px;
 		border: 1px solid black;
 	}
 
@@ -27,6 +27,14 @@ message_2: for online postings.
 		border-spacing: 0px;
 		border-collapse: collapse;
 	}
+
+	.calendly-inline-widget{
+		width:400;
+		height:700px;
+		margin: -10px;
+		padding: 0px;
+	}
+
 </style>
 
 
@@ -36,13 +44,28 @@ message_2: for online postings.
 		<tbody>
 			<tr>
 				<td>
-					To see the items in person, please schedule an appointment.
+					To see the items in person, please schedule an appointment. I will be in touch with the location and details after the confirmation.
 					<br>
-					Select the event and time below:
+					Select the event and time below.
+					<br>
 				</td>
 			</tr>
 			<tr>
 				<td>
+					<!-- Calendly inline widget begin -->
+						<iframe class="calendly-inline-widget"
+							src="https://calendly.com/onatbas?embed_domain=onatbas.github.io&amp;embed_type=Inline"
+							width="100%" height="100%" frameborder="0"></iframe>
+					</div>
+					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+						async=""></script>
+					<!-- Calendly inline widget end -->
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<h3>Other listings:</h3>
 					<ul>
 						<li>
 							<b>Bikes:</b>
@@ -53,24 +76,6 @@ message_2: for online postings.
 							<a href="https://onatbas.github.io/rossignol-skis/">https://onatbas.github.io/rossignol-skis/</a>
 						</li>
 					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<!-- Calendly inline widget begin -->
-					<div class="calendly-inline-widget" data-url="https://calendly.com/onatbas"
-						style="position: relative;min-width:100%;height:630px;" data-processed="true">
-						<div class="calendly-spinner">
-							<div class="calendly-bounce1"></div>
-							<div class="calendly-bounce2"></div>
-							<div class="calendly-bounce3"></div>
-						</div><iframe
-							src="https://calendly.com/onatbas?embed_domain=onatbas.github.io&amp;embed_type=Inline"
-							width="100%" height="100%" frameborder="0"></iframe>
-					</div>
-					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
-						async=""></script>
-					<!-- Calendly inline widget end -->
 				</td>
 			</tr>
 		</tbody>
