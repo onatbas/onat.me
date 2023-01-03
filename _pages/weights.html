@@ -15,16 +15,31 @@ message_2: plates you need.
 		}
 
 		#result td{
-			width: 150px;
+			width: 100px;
 		}
 
-		hr{
+		.break{
 			page-break-after: always;
 		}
 
 		table{
 			border-collapse: collapse;
 		}
+
+		textarea{
+			width: 400px;
+			height: 140px;
+		}
+
+		tbody:nth-child(5n-3),
+		tr:nth-child(5n-3){
+			background-color:lightgrey;
+		}
+
+		#result td:nth-child(4n){
+			width: 200px;
+		}
+
 	</style>
 	<script>
 
@@ -63,7 +78,7 @@ message_2: plates you need.
 				var curr = 0;
 				var stack = [];
 				for (var i = 0; i < w.c; i++) {
-					stack.push({ kg: w.kg, text: w.kg + " " });
+					stack.push({ kg: w.kg, text: w.t ? w.t : w.kg });
 				}
 				stacks.push(stack);
 			});
@@ -95,7 +110,7 @@ message_2: plates you need.
 				var disks = 0;
 				stack.forEach(s => {
 					s.forEach(count => {
-						t += count.text;
+						t +=  count.text + " "; 
 						disks += 1;
 					});
 				});
@@ -138,7 +153,7 @@ message_2: plates you need.
 					"<td>"+row.k+" kg</td>" + 
 					"<td>"+row.p+" pound</td>" + 
 					"<td>"+row.st+" kg</td>" + 
-					"<td>"+row.s+"</td>" + 
+					"<td class=\"stack\">"+row.s+"</td>" + 
 					"<td>"+row.d+" disks</td>" + 
 					"</tr>";
 
@@ -155,24 +170,30 @@ message_2: plates you need.
 
 	</ul>
 
-	<label>Bar Weight:</label><input type="number" id="bar" value="8" min="0"><br />
-	<label>KG:</label><input type="number" id="kg" value="45" min="0"><br />
+
+	<label>KG:</label><input type="number" id="kg" value="10" min="0">
 	<label>Amount:</label><input type="number" id="amount" value="1" min="0">
 	<button onclick="addWeight()">Add</button>
-	<br />
-	<button onclick="defaults()">My Defaults</button>
+	<hr />	
+<label>Bar Weight:</label><input type="number" id="bar" value="8" min="0">
+	<hr />	
+
+
 	<textarea id="defaults" width="200px" height="200px">[
-		{"kg": 20, "c": 1},
-		{"kg": 11, "c": 1},
+		{"kg": 23.5, "c": 1, "t": "23"},
+		{"kg": 12.5, "c": 1, "t": "12"},
 		{"kg": 5, "c": 2},
 		{"kg": 2, "c": 4},
-		{"kg": 0.5, "c": 2}
+		{"kg": 0.5, "c": 2, "t": "&#189;"}
 ]</textarea>
-	<br />
-	<button onclick="calculate()">Calculate</button>
-	<h1>Breakdown</h1>
-	<hr />
 
+	<br />
+	<button onclick="defaults()">My Defaults</button>
+
+	<hr />
+	<button onclick="calculate()">Calculate</button>
+	<br />
+	<h1 class="break">Results</h1>
 	<table id="result"></table>
 
 </body>
