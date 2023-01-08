@@ -164,7 +164,8 @@ message_2: plates you need.
 
 
 <body>
-	<h1>What do you have? (one side only)</h1>
+	<h1>Your weights</h1>
+	<p>Please enter sets of disks you have. Please enter quantities for one side of the bar only. (If you have 2x20kg, the amount should be 1)</p>
 
 	<ul id="list">
 
@@ -178,17 +179,21 @@ message_2: plates you need.
 <label>Bar Weight:</label><input type="number" id="bar" value="8" min="0">
 	<hr />	
 
+	<p style="font-size: 0.85em; font-style: italic;">This section is optional. You may copy-paste JSON-format data for your weights underneath.
+	<br/>kg: weight <br/>
+	c: count <br/>
+	t: alias<br/></p>
 
 	<textarea id="defaults" width="200px" height="200px">[
-		{"kg": 23.5, "c": 1, "t": "23"},
-		{"kg": 12.5, "c": 1, "t": "12"},
+		{"kg": 22.5, "c": 1, "t": "(B)"},
+		{"kg": 12.5, "c": 1, "t": "(S)"},
 		{"kg": 5, "c": 2},
 		{"kg": 2, "c": 4},
 		{"kg": 0.5, "c": 2, "t": "&#189;"}
 ]</textarea>
 
 	<br />
-	<button onclick="defaults()">My Defaults</button>
+	<button onclick="defaults()">Add from data</button>
 
 	<hr />
 	<button onclick="calculate()">Calculate</button>
