@@ -136,6 +136,9 @@ message_2: plates you need.
 
 			makeMoreStacks(stacks);
 
+			console.log(stacks);
+			console.log(stackOfStacks);
+
 			document.getElementById("result").innerHTML = 
 				"<tr>" + 
 					"<th>Total KG</th>"+ 
@@ -145,14 +148,18 @@ message_2: plates you need.
 					"<th>Disks</th>"+ 
 					"</tr>";
 
-			Object.keys(stackOfStacks).forEach(i => {
+			Object.keys(stackOfStacks).sort((a,b)=>{
+				a = parseFloat(a);
+				b = parseFloat(b);
+				return a>b;
+			}).forEach(i => {
 				const row = stackOfStacks[i];
 
 				//k: kg, p: Math.round(2.20462 * kg), st: totalStack, s: info.t, d: info.disks })
 				document.getElementById("result").innerHTML += "<tr>" + 
-					"<td>"+row.k+" kg</td>" + 
-					"<td>"+row.p+" pound</td>" + 
-					"<td>"+row.st+" kg</td>" + 
+					"<td>"+Math.round(row.k*100)/100+" kg</td>" + 
+					"<td>"+Math.round(row.p*100)/100+" pound</td>" + 
+					"<td>"+Math.round(row.st*100)/100+" kg</td>" + 
 					"<td class=\"stack\">"+row.s+"</td>" + 
 					"<td>"+row.d+" disks</td>" + 
 					"</tr>";
