@@ -1,7 +1,0 @@
-collections:
-  apps:
-    output: true
-  social:
-    output: true
-  pages:
-    output: true
