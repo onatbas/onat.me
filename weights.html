@@ -39,13 +39,12 @@
 		var weights = [];
 
 		function addWeight() {
-			var kg = parseInt(document.getElementById("kg").value);
+			var pound = parseInt(document.getElementById("kg").value);
 			var amount = parseInt(document.getElementById("amount").value);
 
-			console.log(kg);
-			weights.push({ kg: kg, c: amount });
+			weights.push({ pound: pound, c: amount });
 
-			document.getElementById("list").innerHTML += "<li>" + kg + " x" + amount + "</li>";
+			document.getElementById("list").innerHTML += "<li>" + pound + " x" + amount + "</li>";
 		}
 
 
@@ -55,7 +54,7 @@
 
 			document.getElementById("list").innerHTML = "";
 			weights.forEach(row=>{
-				document.getElementById("list").innerHTML += "<li>" + row.kg + " x" + row.c + "</li>";
+				document.getElementById("list").innerHTML += "<li>" + row.pound + " x" + row.c + "</li>";
 			})
 		}
 
@@ -71,7 +70,7 @@
 				var curr = 0;
 				var stack = [];
 				for (var i = 0; i < w.c; i++) {
-					stack.push({ kg: w.kg, text: w.t ? w.t : w.kg });
+					stack.push({ pound: w.pound, text: w.t ? w.t : w.pound });
 				}
 				stacks.push(stack);
 			});
@@ -92,7 +91,7 @@
 				var t = 0;
 				stack.forEach(s => {
 					s.forEach(count => {
-						t += count.kg;
+						t += count.pound;
 					});
 				});
 				return t;
@@ -114,11 +113,11 @@
 				if (stack.length == 0) return;
 
 				var totalStack = total(stack);
-				var kg = totalStack * 2 + bar;
+				var pound = totalStack * 2 + bar;
 				info = text(stack);
 
-				if (taken[totalStack] != 1 || stackOfStacks[kg].d > info.disks) {
-					stackOfStacks[kg] = ({ k: kg, p: Math.round(2.20462 * kg), st: totalStack, s: info.t, d: info.disks });
+				if (taken[totalStack] != 1 || stackOfStacks[pound].d > info.disks) {
+					stackOfStacks[pound] = ({ k: (Math.round(pound / 2.20)), p: pound, st: totalStack, s: info.t, d: info.disks });
 					taken[totalStack] = 1;
 
 					for (var i = 0; i < stack.length; i++) {
@@ -134,9 +133,9 @@
 
 			document.getElementById("result").innerHTML = 
 				"<tr>" + 
-					"<th>Total KG</th>"+ 
 					"<th>Total LB</th>"+ 
-					"<th>KG (oneside)</th>"+ 
+					"<th>Total KG</th>"+ 
+					"<th>Pound (oneside)</th>"+ 
 					"<th>Stack</th>"+ 
 					"<th>Disks</th>"+ 
 					"</tr>";
@@ -150,9 +149,9 @@
 
 				//k: kg, p: Math.round(2.20462 * kg), st: totalStack, s: info.t, d: info.disks })
 				document.getElementById("result").innerHTML += "<tr>" + 
-					"<td>"+Math.round(row.k*100)/100+" kg</td>" + 
 					"<td>"+Math.round(row.p*100)/100+" pound</td>" + 
-					"<td>"+Math.round(row.st*100)/100+" kg</td>" + 
+					"<td>"+Math.round(row.k*100)/100+" kg</td>" + 
+					"<td>"+Math.round(row.st*100)/100+" pound</td>" + 
 					"<td class=\"stack\">"+row.s+"</td>" + 
 					"<td>"+row.d+" disks</td>" + 
 					"</tr>";
@@ -172,7 +171,7 @@
 	</ul>
 
 
-	<label>KG:</label><input type="number" id="kg" value="10" min="0">
+	<label>Pounds:</label><input type="number" id="kg" value="10" min="0">
 	<label>Amount:</label><input type="number" id="amount" value="1" min="0">
 	<button onclick="addWeight()">Add</button>
 	<hr />	
@@ -180,16 +179,16 @@
 	<hr />	
 
 	<p style="font-size: 0.85em; font-style: italic;">This section is optional. You may copy-paste JSON-format data for your weights underneath.
-	<br/>kg: weight <br/>
+	<br/>pound: weight <br/>
 	c: count <br/>
 	t: alias<br/></p>
 
 	<textarea id="defaults" width="200px" height="200px">[
-		{"kg": 22.5, "c": 1, "t": "(B)"},
-		{"kg": 12.5, "c": 1, "t": "(S)"},
-		{"kg": 5, "c": 2},
-		{"kg": 2, "c": 4},
-		{"kg": 0.5, "c": 2, "t": "&#189;"}
+		{"pound": 45, "c": 1},
+		{"pound": 35, "c": 1},
+		{"pound": 25, "c": 1},
+		{"pound": 10, "c": 1},
+		{"pound": 5, "c": 2, "t": "c"}
 ]</textarea>
 
 	<br />
