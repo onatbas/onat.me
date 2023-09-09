@@ -39,12 +39,12 @@
 		var weights = [];
 
 		function addWeight() {
-			var pound = parseInt(document.getElementById("kg").value);
+			var w = parseInt(document.getElementById("kg").value);
 			var amount = parseInt(document.getElementById("amount").value);
 
-			weights.push({ pound: pound, c: amount });
+			weights.push({ w: w, c: amount });
 
-			document.getElementById("list").innerHTML += "<li>" + pound + " x" + amount + "</li>";
+			document.getElementById("list").innerHTML += "<li>" + w + " " + unit + " x" + amount + "</li>";
 		}
 
 
@@ -54,11 +54,15 @@
 
 			document.getElementById("list").innerHTML = "";
 			weights.forEach(row=>{
-				document.getElementById("list").innerHTML += "<li>" + row.pound + " x" + row.c + "</li>";
+				document.getElementById("list").innerHTML += "<li>" + row.w + " x" + row.c + "</li>";
 			})
 		}
 
 		function calculate() {
+
+			const unit = document.querySelector('input[name = unit]:checked'). value;
+			const isKg = unit === "kg";
+
 
 			var bar =  parseInt(document.getElementById("bar").value);
 			var taken = {};
@@ -70,7 +74,7 @@
 				var curr = 0;
 				var stack = [];
 				for (var i = 0; i < w.c; i++) {
-					stack.push({ pound: w.pound, text: w.t ? w.t : w.pound });
+					stack.push({ w: w.w, text: w.t ? w.t : w.w });
 				}
 				stacks.push(stack);
 			});
@@ -91,7 +95,7 @@
 				var t = 0;
 				stack.forEach(s => {
 					s.forEach(count => {
-						t += count.pound;
+						t += count.w;
 					});
 				});
 				return t;
@@ -110,14 +114,16 @@
 			}
 
 			function makeMoreStacks(stack) {
+
 				if (stack.length == 0) return;
 
 				var totalStack = total(stack);
-				var pound = totalStack * 2 + bar;
+				var w = totalStack * 2 + bar;
 				info = text(stack);
 
-				if (taken[totalStack] != 1 || stackOfStacks[pound].d > info.disks) {
-					stackOfStacks[pound] = ({ k: (Math.round(pound / 2.20)), p: pound, st: totalStack, s: info.t, d: info.disks });
+				if (taken[totalStack] != 1 || stackOfStacks[w].d > info.disks) {
+					stackOfStacks[w] = { k: (Math.round(w / 2.20)), p: w, st: totalStack, s: info.t, d: info.disks };
+					if (isKg) {stackOfStacks[w].k = Math.round(w * 2.20)}
 					taken[totalStack] = 1;
 
 					for (var i = 0; i < stack.length; i++) {
@@ -133,9 +139,10 @@
 
 			document.getElementById("result").innerHTML = 
 				"<tr>" + 
-					"<th>Total LB</th>"+ 
+					(isKg ? "" : "<th>Total LB</th>")+ 
 					"<th>Total KG</th>"+ 
-					"<th>Pound (oneside)</th>"+ 
+					(!isKg ? "" : "<th>Total LB</th>")+ 
+					"<th>" + unit.toUpperCase() + " (oneside)</th>"+ 
 					"<th>Stack</th>"+ 
 					"<th>Disks</th>"+ 
 					"</tr>";
@@ -149,9 +156,9 @@
 
 				//k: kg, p: Math.round(2.20462 * kg), st: totalStack, s: info.t, d: info.disks })
 				document.getElementById("result").innerHTML += "<tr>" + 
-					"<td>"+Math.round(row.p*100)/100+" pound</td>" + 
-					"<td>"+Math.round(row.k*100)/100+" kg</td>" + 
-					"<td>"+Math.round(row.st*100)/100+" pound</td>" + 
+					"<td>"+Math.round(row.p*100)/100+"</td>" + 
+					"<td>"+Math.round(row.k*100)/100+"</td>" + 
+					"<td>"+Math.round(row.st*100)/100+"</td>" + 
 					"<td class=\"stack\">"+row.s+"</td>" + 
 					"<td>"+row.d+" disks</td>" + 
 					"</tr>";
@@ -165,30 +172,36 @@
 <body>
 	<h1>Your weights</h1>
 	<p>Please enter sets of disks you have. Please enter quantities for one side of the bar only. (If you have 2x20kg, the amount should be 1)</p>
-
 	<ul id="list">
-
 	</ul>
 
-
-	<label>Pounds:</label><input type="number" id="kg" value="10" min="0">
+	<input type="radio" id="kg_unit" name="unit" value="kg">
+	<label for="kg">KG</label>
+	<input type="radio" id="lb_unit" name="unit" value="lb">
+	<label for="lb">LB</label>
+	<input type="number" id="kg" value="10" min="0">
 	<label>Amount:</label><input type="number" id="amount" value="1" min="0">
+
+
+
+
+
 	<button onclick="addWeight()">Add</button>
 	<hr />	
 <label>Bar Weight:</label><input type="number" id="bar" value="8" min="0">
 	<hr />	
 
 	<p style="font-size: 0.85em; font-style: italic;">This section is optional. You may copy-paste JSON-format data for your weights underneath.
-	<br/>pound: weight <br/>
+	<br/>w: weight <br/>
 	c: count <br/>
 	t: alias<br/></p>
 
 	<textarea id="defaults" width="200px" height="200px">[
-		{"pound": 45, "c": 1},
-		{"pound": 35, "c": 1},
-		{"pound": 25, "c": 1},
-		{"pound": 10, "c": 1},
-		{"pound": 5, "c": 2, "t": "c"}
+		{"w": 45, "c": 1},
+		{"w": 35, "c": 1},
+		{"w": 25, "c": 1},
+		{"w": 10, "c": 1},
+		{"w": 5, "c": 2, "t": "c"}
 ]</textarea>
 
 	<br />
